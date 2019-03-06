@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- BootStrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Font-awesone -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Icon & Title -->
+    <title>Bootstrap</title>
+    <link rel="icon" type="image/ico" href="https://getbootstrap.com/favicon.ico">
+
+    <!-- Optional Scripts for bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- Styles -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 16px;
+            font-family: Arial, 'Calibri', Helvetica, sans-serif;
+            font-style: italic;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .pl-sm-1 {
+            padding-left: 0;
+        }
+
+        .light-grey {
+            color: rgb(202, 202, 202);
+        }
+
+        .image {
+            height: 245px;
+            max-height: 245px;
+        }
+
+        .hobbies {
+            height: 60px;
+            width: 60px;
+        }
+
+        .container {
+            background-color: rgb(235, 235, 235);
+        }
+
+        .bg-gardiant {
+            background: linear-gradient(-90deg, rgb(46, 80, 162), rgb(64, 99, 181));
+        }
+
+        .display-inline {
+            display: inline;
+        }
+
+
+        .display-inline-block {
+            display: inline-block;
+        }
+
+
+        @media only screen and (max-width: 600px) {
+            * {
+                font-size: 6px;
+            }
+
+            .image {
+                height: 90px;
+            }
+
+            .pl-sm-1 {
+                padding-left: 0rem !important;
+            }
+
+            .hobbies {
+                height: 15px;
+                width: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container mb-5">
+        <!-- PERSONAL INFORMATION -->
+        <div class="row mt-4 ">
+            <div class="col-12 pl-0">
+                <div class="row pl-3">
+                    <div class="col-9 pt-3 pr-0">
+                        <p class="bg-gardiant text-white h6 py-2 pl-3 mb-2 font-weight-bold"><i
+                                class="far fa-address-card pr-2 "></i>PERSONAL INFORMATION</p>
+                        <div class="row">
+                            <div class="col-4">
+                                <p class="font-weight-bold pl-3">Name and Surname:</p>
+                            </div>
+                            <div class="col-8">
+                                <p>John Simth</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <p class="font-weight-bold pl-3">Address:</p>
+                            </div>
+                            <div class="col-8">
+                                <p>199 Walnut St, Suite 6<br> Lockport, NY 14094</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <p class="font-weight-bold pl-3">Date of Birth:</p>
+                            </div>
+                            <div class="col-8">
+                                <p>1983-03-23</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <p class="font-weight-bold pl-3">Phone number:</p>
+                            </div>
+                            <div class="col-8">
+                                <p>888000111</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <p class="font-weight-bold pl-3">E-mail:</p>
+                            </div>
+                            <div class="col-8">
+                                <p>john.simth@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 pl-0 image">
+                        <img alt="image" height="100%" width="100%"
+                            src="https://sites.google.com/a/my.westminster.ac.uk/mycv/_/rsrc/1472876667004/home/man-in-suit2-300x300.jpg">
+                    </div>
+                    <div class="col-12">
+                        <div class="row mt-2">
+                            <div class="col-3">
+                                <p class="font-weight-bold pl-3">Profile</p>
+                            </div>
+                            <div class="col-9">
+                                <p class="pl-sm-1">Detail-oriented individual with <b>five years</b> of managemant
+                                    experience looking to
+                                    secure an <b>Agile Project Manager</b> position with ABC Companey.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- EDUCATION -->
+        <div class="row">
+            <p class="bg-gardiant text-white h6 py-2 pl-3 mb-2 ml-3 w-100 font-weight-bold"><i
+                    class="fas fa-graduation-cap pr-2"></i>EDUCATION</p>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-3">
+                        <p class="font-weight-bold pl-sm-3">2012 - 2014</p>
+                    </div>
+                    <div class="col-9">
+                        <p><b>University of Cambridge, Cambridge, England</b><br>Business Marketing</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-3">
+                        <p class="font-weight-bold pl-sm-3">2010 - 2012</p>
+                    </div>
+                    <div class="col-9">
+                        <p><b>English school in London</b><br>Language Course</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- EXPERIENCE -->
+        <div class="row">
+            <p class="bg-gardiant text-white h6 py-2 pl-3 mb-2 ml-3 w-100 font-weight-bold"><i
+                    class="fas fa-cogs pr-2"></i>EXPERIENCE</p>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-3">
+                        <p class="font-weight-bold pl-sm-3">01.2012 - 11.2015</p>
+                    </div>
+                    <div class="col-9">
+                        <p><b>ABC Companey</b><br>Manager<br>Reponsibilities; coordinated tracer activities; Conducted
+                            client assessments; Screened and trained new employees.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-3">
+                        <p class="font-weight-bold pl-sm-3">04.2009 - 11.2011</p>
+                    </div>
+                    <div class="col-9">
+                        <p><b>XYZ Companey</b><br>Junior Project Manager<br>Reponsibilities; managing and leading the
+                            project team; recruting project staff and consultants; developing and maintaining a detailed
+                            project plan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SKILLS & PERSONALITY -->
+        <div class="row">
+            <div class="bg-gardiant text-white h6 ml-3 py-2 pl-3 mb-2 w-100 mb-3">
+                <p class="mb-0 w-50 display-inline-block font-weight-bold"><i
+                        class="fas fa-puzzle-piece pr-2"></i>SKILLS</p>
+                <p class="mb-0 w-50 display-inline font-weight-bold"><i class="fas fa-check-circle pr-2"></i>PERSONALITY
+                </p>
+            </div>
+
+            <div class="col-6 pl-sm-1">
+                <ul class="pl-4">
+                    <li><span class="font-weight-bold h4">✔ </span>Good communication - written and oral skills</li>
+                    <li><span class="font-weight-bold h4">✔ </span>Excellent conceptual and analysis skills</li>
+                    <li><span class="font-weight-bold h4">✔ </span>Efftive interpersonal skills</li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <ul>
+                    <li><span class="font-weight-bold h4">✔ </span>Communicative</li>
+                    <li><span class="font-weight-bold h4">✔ </span>Creative</li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <ul>
+                    <li><span class="font-weight-bold h4">✔ </span>Punctualitys</li>
+                    <li><span class="font-weight-bold h4">✔ </span>Organized</li>
+                </ul>
+            </div>
+            <!-- <p class="bg-gardiant text-white h6 py-2 pl-3 mb-2 col-6">Test</p> -->
+        </div>
+        <!-- SOFTWARE SKILLS & LANGUAES -->
+        <div class="row">
+            <div class="bg-gardiant text-white h6 ml-3 py-2 pl-3 mb-2 w-100 mb-3">
+                <p class="mb-0 w-50 display-inline-block font-weight-bold"><i class="fas fa-desktop pr-2"></i>SOFTWARE
+                    SKILLS</p>
+                <p class="mb-0 w-50 display-inline font-weight-bold"><i class="fas fa-comments pr-2"></i>LANGUAGES
+                </p>
+            </div>
+
+            <div class="col-6 pl-sm-1">
+                <div class="row">
+                    <div class="col-3">
+                        <p class="pl-4 mb-1">Word</p>
+                        <p class="pl-4 mb-1">Powerpoint</p>
+                    </div>
+                    <div class="col-9">
+                        <p class="pl-4 mb-1">
+                            <i class="fas fa-square-full"></i>
+                            <i class="fas fa-square-full"></i>
+                            <i class="fas fa-square-full"></i>
+                            <i class="fas fa-square-full"></i>
+                            <i class="fas fa-square-full"></i>
+                            <i class="fas fa-square-full light-grey"></i>
+                        </p>
+                        <p class="pl-4 mb-1">
+                            <i class="fas fa-square-full"></i>
+                            <i class="fas fa-square-full"></i>
+                            <i class="fas fa-square-full"></i>
+                            <i class="fas fa-square-full"></i>
+                            <i class="fas fa-square-full light-grey"></i>
+                            <i class="fas fa-square-full light-grey"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-3">
+                        <p class="pl-4 mb-1">English</p>
+                        <p class="pl-4 mb-1">Vietnamese</p>
+                    </div>
+                    <div class="col-9">
+                        <p class="pl-4 mb-1">
+                            <i class="fas fa-square-full"></i>
+                            <i class="fas fa-square-full"></i>
+                            <i class="fas fa-square-full"></i>
+                            <i class="fas fa-square-full"></i>
+                            <i class="fas fa-square-full"></i>
+                            <i class="fas fa-square-full light-grey"></i>
+                        </p>
+                        <p class="pl-4 mb-1">
+                            <i class="fas fa-square-full"></i>
+                            <i class="fas fa-square-full"></i>
+                            <i class="fas fa-square-full"></i>
+                            <i class="fas fa-square-full"></i>
+                            <i class="fas fa-square-full"></i>
+                            <i class="fas fa-square-full light-grey"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CERTIFICATION & HOBBIES -->
+        <div class="row mt-5">
+            <div class="bg-gardiant text-white h6 ml-3 py-2 pl-3 mb-2 w-100 mb-3">
+                <p class="mb-0 w-50 display-inline-block font-weight-bold"><i class="fas fa-star pr-2"></i>CERTIFICATION
+                </p>
+                <p class="mb-0 w-50 display-inline font-weight-bold"><i class="fas fa-futbol pr-2"></i>HOBBIES
+                </p>
+            </div>
+
+            <div class="col-6 pl-sm-1">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="pl-4">- Certificated manager by Institue of Certified<br> professional managers.</p>
+                        <p class="pl-4">- The finalcial risk manager certification.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 pl-sm-1">
+                <div class="row">
+                    <div class="col-12">
+                        <img alt="SEO" src="./assets/SEO.png" class="mx-3 hobbies">
+                        <img alt="Technology" src="./assets/technology.png" class="mx-3 hobbies">
+                        <img alt="Tennis" src="./assets/tennis.png" class="mx-3 hobbies">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mt-2">
+                <p class="text-center mt-5 small">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book.
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
