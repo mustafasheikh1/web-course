@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Arial, 'Calibri', Helvetica, sans-serif;
+    font-style: italic;
+}
+
+ul {
+    list-style: none;
+}
+
+.pl-sm-1 {
+    padding-left: 0;
+}
+
+.light-grey {
+    color: rgb(202, 202, 202);
+}
+
+.image {
+    height: 245px;
+    max-height: 245px;
+}
+
+.hobbies {
+    height: 60px;
+    width: 60px;
+}
+
+.container {
+    background-color: rgb(235, 235, 235);
+}
+
+.bg-gardiant {
+    background: linear-gradient(-90deg, rgb(46, 80, 162), rgb(64, 99, 181));
+}
+
+.display-inline {
+    display: inline;
+}
+
+
+.display-inline-block {
+    display: inline-block;
+}
+
+
+@media only screen and (max-width: 600px) {
+    * {
+        font-size: 6px;
+    }
+
+    .image {
+        height: 90px;
+    }
+
+    .pl-sm-1 {
+        padding-left: 0rem !important;
+    }
+
+    .hobbies {
+        height: 15px;
+        width: 15px;
+    }
+}
