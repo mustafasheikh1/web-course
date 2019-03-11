@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(38, 38, 71);
+}
+
+.jumbotron{
+    border-radius: 0px;
+    background-color:#fff;
+}
+
+.info{
+    /* background-color: rgba(128, 136, 136, 0.082); */
+    background-image: url('./assets/Apple-Apple.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    
+}
+
+.discription{
+    height: 300px;
+    border-bottom: 1px solid grey;
+}
+
+.discription > .col-8 > .card {
+    border: none;
+}
+
+.image{
+    height: 100%;
+    width: 100%;
+}
+
+footer{
+    background-color: black;
+    color: #fff;
+}
+
+footer > p{
+    color: red;
+}
+
+footer > p > span {
+    color: blue;
+}
